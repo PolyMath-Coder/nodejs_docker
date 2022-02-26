@@ -18,7 +18,7 @@ router.put('/ninja/:id', (req, res) => {
 });
 
 //Delete a ninja from the Database
-router.get('/ninja/:id', (req, res) => {
+router.delete('/ninja/:id', (req, res) => {
   res.send({ type: 'DELETE' });
 });
 

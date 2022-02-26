@@ -1,10 +1,10 @@
 const express = require('express');
 
-const routes = require('./routes/api');
-
 //Set up express app
 
 const app = express();
+
+const routes = require('./routes/api');
 
 app.use('/api', routes);
 
