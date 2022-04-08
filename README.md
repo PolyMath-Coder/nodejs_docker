@@ -6,17 +6,13 @@ Below are lists of command scripts useful in setting up Docker
 
 Docker Command Scripts
 
-- Setting up a docker Image.
-
-  `docker build -t [choicedockerimagename]`
+- `docker build -t [choicedockerimagename]` sets up the docker Image.
 
 * `docker images` shows all available docker images
 
-- Shows the list of running containers.
-  `docker ps`
+- `docker ps` shows the list of running containers.
 
-- Stops a container.
-  `docker stop [nameofcontainer]` or `docker stop [id]`
+* `docker stop [nameofcontainer]` or `docker stop [id]` stops a container.
 
 - `docker ps` shows the list of presently running docker processes on the machine.
 
@@ -24,7 +20,6 @@ Docker Command Scripts
 
 * `docker start [nameofcontainer]` starts an existing container.
 
-- Runs a container with the involved port parameters.
-  `docker run --name [choicenameofcontainer] -p 4000:4000 -d [imagename]`
+- `docker run --name [choicenameofcontainer] -p 4000:4000 -d [imagename]` runs a container with the involved port parameters.
 
-  For more info, be sure to look up the [Docker Documentation](https://docs.docker.com/language/nodejs/run-containers/) and feel free to reach out for clarification if in doubt.
+For more info, be sure to look up the [Docker Documentation](https://docs.docker.com/language/nodejs/run-containers/) and feel free to reach out for clarification if in doubt.
