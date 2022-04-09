@@ -22,15 +22,15 @@ app.get('/', (req, res) => {
   res.status(200).json([
     {
       id: 1,
-      title: 'Book Review: Jewel in the Savannah',
+      title: 'Book Review: Jewel in the Savannah.',
     },
     {
       id: 2,
-      title: 'A walk in the park.',
+      title: 'A walk in the Park.',
     },
     {
       id: 3,
-      title: 'King of Boys',
+      title: 'King of all the Boys',
     },
   ]);
 });

@@ -1,19 +1,25 @@
-FROM node:17-alpine
+FROM node:16-alpine
+
+RUN npm install -g nodemon
 
 WORKDIR /app
 
-COPY . .
-
-COPY /routes /app
-
-COPY /models /app
+COPY package.json .
 
 RUN npm install
+
+COPY /routes .
+
+COPY /models .
+
+COPY . .
+
+
 
 EXPOSE 4000
 
 
-CMD [ "node", "index.js"]
+CMD [ "npm", "run", "dev"]
 
 
 
